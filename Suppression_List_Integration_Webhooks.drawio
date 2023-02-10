@@ -1,20 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2023-02-08T09:42:37.397Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="yUuR9HB7qsfgvifHgpBG" version="20.8.15" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-10T07:22:46.770Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="6toJuaauQnLShixnsa72" version="20.8.15" type="github">
   <diagram name="Page-1" id="acfl4QLDFEIcwO-fo6fv">
-    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1509" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="xdOmlFDBoD0OPp4gdqih-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;startArrow=classic;startFill=1;" parent="1" source="xdOmlFDBoD0OPp4gdqih-2" target="xdOmlFDBoD0OPp4gdqih-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="VhSR_AF54bUEmmoor4YM-3" value="Handling of unsubscribed profiles" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xdOmlFDBoD0OPp4gdqih-10">
+          <mxGeometry x="-0.0692" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="xdOmlFDBoD0OPp4gdqih-22" value="Suppression list entry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="xdOmlFDBoD0OPp4gdqih-2" target="xdOmlFDBoD0OPp4gdqih-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xdOmlFDBoD0OPp4gdqih-2" value="AJO" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="920" y="120" width="240" height="140" as="geometry" />
+          <mxGeometry x="1110" y="400" width="240" height="140" as="geometry" />
         </mxCell>
         <mxCell id="xdOmlFDBoD0OPp4gdqih-3" value="Optimizely" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="120" width="240" height="140" as="geometry" />
+          <mxGeometry x="230" y="400" width="240" height="140" as="geometry" />
         </mxCell>
         <mxCell id="xdOmlFDBoD0OPp4gdqih-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="xdOmlFDBoD0OPp4gdqih-8" target="xdOmlFDBoD0OPp4gdqih-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -25,25 +30,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="xdOmlFDBoD0OPp4gdqih-8" value="AEP" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="920" y="400" width="240" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="xdOmlFDBoD0OPp4gdqih-14" value="3. Handling of unsubscribed profiles" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1020" y="370" width="210" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="xdOmlFDBoD0OPp4gdqih-16" value="&lt;h1&gt;1. Initial CSV load&lt;/h1&gt;&lt;p&gt;a. In Optimizely three diffrent supression reason type list will be generated for each country&lt;br&gt;&lt;/p&gt;&lt;p&gt;b. CSV files generated in Optimizely&amp;nbsp; will be used to create inital suppression list&lt;/p&gt;&lt;p&gt;c. Upload CSV files in AJO (no. of files will&amp;nbsp; vary depending of the query limitation - ?10k)&lt;/p&gt;&lt;p&gt;d.&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;This is an asynchrous call and status of the upload has to be checked&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;. Once completed, ingestion should be inspected (recordCount, handledCount, failedCount etc.)&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="40" y="780" width="630" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="xdOmlFDBoD0OPp4gdqih-17" value="&lt;h1&gt;2. Scheduled transfer of deltas&lt;/h1&gt;&lt;p&gt;a. Query AJO for suppressed email addresses and domains for scheduled period to get suppression list without unsubscribed profiles&lt;/p&gt;&lt;p&gt;b. From AEP export email addresses of profiles from&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;unsubscribed segment (for scheduled period) and merge the list with AJO suppresion list&lt;/span&gt;&lt;/p&gt;c. Query Optimizely for suppressed email addresses and domains for scheduled period and merge all three types of suppressed lists to one list&lt;p&gt;d. Overlay the lists from AJO and Optimizely and delete the same entries based on email address as the key to get temporary list.&lt;br&gt;&lt;/p&gt;&lt;p&gt;e. Overlay the temporary list over AJO list and delete all the same entries. Transfer the deltas to Optimizely.&lt;br&gt;&lt;/p&gt;&lt;p&gt;f. Overlay the temporary list over Optimizely&amp;nbsp;list and delete all the same entries. Transfer the deltas to AJO.&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="630" y="780" width="630" height="270" as="geometry" />
-        </mxCell>
-        <mxCell id="xdOmlFDBoD0OPp4gdqih-19" value="&lt;h1&gt;3. Handling of unsubscribed profiles&lt;/h1&gt;&lt;p&gt;Thera are no unsubscribed profiles in AJO suppression list because once unsubscribed, the profiles are automatically removed from the audience of future marketing messages.&lt;br&gt;&lt;/p&gt;&lt;p&gt;For that reason, we would need to use AEP to retrieve unsubscribed profiles.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="40" y="900" width="630" height="170" as="geometry" />
+          <mxGeometry x="1110" y="680" width="240" height="140" as="geometry" />
         </mxCell>
         <mxCell id="xdOmlFDBoD0OPp4gdqih-25" value="Trigger for action to process the event" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="xdOmlFDBoD0OPp4gdqih-20" target="xdOmlFDBoD0OPp4gdqih-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xdOmlFDBoD0OPp4gdqih-20" value="Adobe I/O&lt;br&gt;&lt;br&gt;I/O Events" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="700" y="400" width="120" height="140" as="geometry" />
+          <mxGeometry x="890" y="680" width="120" height="140" as="geometry" />
         </mxCell>
         <mxCell id="xdOmlFDBoD0OPp4gdqih-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="xdOmlFDBoD0OPp4gdqih-21" target="xdOmlFDBoD0OPp4gdqih-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -54,7 +47,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="xdOmlFDBoD0OPp4gdqih-21" value="Adobe I/O&lt;br&gt;&lt;br&gt;I/O Runtime" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="370" y="400" width="120" height="140" as="geometry" />
+          <mxGeometry x="560" y="680" width="120" height="140" as="geometry" />
         </mxCell>
         <mxCell id="xdOmlFDBoD0OPp4gdqih-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="xdOmlFDBoD0OPp4gdqih-26" target="xdOmlFDBoD0OPp4gdqih-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -65,13 +58,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="xdOmlFDBoD0OPp4gdqih-26" value="Adobe I/O&lt;br&gt;&lt;br&gt;I/O Gateway" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="100" y="400" width="120" height="140" as="geometry" />
+          <mxGeometry x="290" y="680" width="120" height="140" as="geometry" />
         </mxCell>
         <mxCell id="VhSR_AF54bUEmmoor4YM-2" value="Register webhooks" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="VhSR_AF54bUEmmoor4YM-1" target="xdOmlFDBoD0OPp4gdqih-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VhSR_AF54bUEmmoor4YM-1" value="Developer console" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="120" width="120" height="140" as="geometry" />
+          <mxGeometry x="710" y="400" width="120" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
